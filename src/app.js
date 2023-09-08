@@ -19,7 +19,8 @@ class SlackInfo {
     return day[new Date().getDay()];
   }
   getUtcMilliseconds() {
-    return new Date().getUTCMilliseconds();
+    // trick question.
+    return new Date().getTime();
   }
   generateHtml() {
     const main = document.createElement("main");
